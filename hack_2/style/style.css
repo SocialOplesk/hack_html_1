@@ -1,0 +1,33 @@
+*{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    & header{
+        background: #93B5C9;
+        max-width: 100em;
+        min-height: 7em;
+    }
+    & nav{
+        background: #AB2849;
+        max-width: 100em;
+        min-height: 17em;
+    }
+}
+section {
+    & article:nth-child(n){
+        background: #AB2849;
+        max-width: 50em;
+        min-height: 6em;
+        margin: 10px 0;
+        border: 1px solid black;
+    }
+}
+footer{
+    background: #AB2849;
+    max-width: 80em;
+    min-height: 6em;
+    margin: 10px 0 10px 77px;
+}
