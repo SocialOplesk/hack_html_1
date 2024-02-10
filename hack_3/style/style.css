@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+:root{
+    --primary: #93B5C9;
+    --secondary: #AB2849;
+}
+div{
+    & header{
+        background:var(--primary);
+        max-width: 100vw;
+        min-height: 15vh;
+    }
+    & nav{
+        background:var(--secondary);
+        max-width: 100vw;
+        min-height: 30vh;
+    }
+}
+section{
+    display: flex;
+    place-content: center;
+    place-items: center;
+    flex-wrap: wrap;
+        & article[name*="uno"],
+        & article[name*="cuatro"]{
+            flex: 1 1 100em;
+            background: var(--secondary);
+            max-width: 100%;
+            min-height: 10em;
+            margin: 40px;
+        }
+        & article:nth-child(2),
+        & article:nth-child(3),
+        & article:nth-child(5),
+        & article:nth-child(6){
+            flex: 1 0 auto;
+            max-width: 42em;
+            min-height: 10em;
+            background: var(--secondary);
+            margin: 10px;
+        }   
+}
+footer{
+    background: var(--secondary);
+    max-width: 100vw;
+    min-height: 10vh;
+    margin: 0 0 10px 0;
+}
