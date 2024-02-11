@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Ruda&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --texto:#B88940;
+    --lineas:#FFBD59;
+}
+
+body{
+    margin: 10px;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    & div{
+        background: black;
+        text-decoration: underline;
+        width: 5%;
+        height: 5px;
+        border-radius: 10px;
+        margin:30px;
+    }
+    & header {
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 3px;
+        font-family: 'Ruda', sans-serif;
+    }
+    & b:nth-child(n){
+        color: var(--texto);
+        font-size: 70px;
+        text-transform:uppercase;
+        letter-spacing: 7px;
+        font-family: 'Ruda', sans-serif;
+    }
+    & b:nth-child(n+4){
+        color: black;
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+    & p{
+        font-weight: 600;
+        margin: 10px;
+        letter-spacing: 3px;
+        font-family: 'Catamaran', sans-serif;
+    }
+}
+
+section{
+    display: relative;
+      #lineales:nth-child(1){
+        color: blue;
+        display: flex;
+        position: absolute;
+        top: 16.5em;
+        left: 4em;
+        right: 0;
+        bottom: 0;
+        width: 85%;
+        height: 30px;
+        background: var(--lineas);
+        z-index: -1;
+    }
+    #lineales:nth-child(2){
+        color: blue;
+        display: flex;
+        position: absolute;
+        top: 19.7em;
+        left: 4em;
+        right: 0;
+        bottom: 0;
+        width: 85%;
+        height: 30px;
+        background: var(--lineas);
+        z-index: -1;
+    }
+    #lineales:nth-child(3){
+        color: blue;
+        display: flex;
+        position: absolute;
+        top: 23em;
+        left: 4em;
+        right: 0;
+        bottom: 0;
+        width: 85%;
+        height: 30px;
+        background: var(--lineas);
+        z-index: -1;
+    }
+    #lineales:nth-child(4){
+        color: blue;
+        display: flex;
+        position: absolute;
+        top: 26em;
+        left: 4em;
+        right: 0;
+        bottom: 0;
+        width: 85%;
+        height: 30px;
+        background: var(--lineas);
+        z-index: -1;
+    }
+    & article{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 50vw;
+        margin: auto;
+        & div:nth-child(1){
+            width: 100%;
+            height: 200px;
+            background: url("../img/1.png") no-repeat center center;
+            background-size: contain;
+            flex: 10em;
+            margin-right:-40px;
+        }
+        & div:nth-child(2){
+            width: 100%;
+            height: 200px;
+            background: url("../img/2.png") no-repeat center center;
+            background-size: contain;
+            z-index: -1;
+            flex: 0 10em;
+        }
+        & div:nth-child(3){
+            width: 100%;
+            height: 200px;
+            background: url("../img/3.png") no-repeat center center;
+            background-size: contain;
+            flex: 10em;
+            margin-left:-40px;
+        }
+    }
+
+    #descripcion_footer{
+        display: flex;
+        flex-direction: row;
+        place-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 10px;
+        font-weight: 600;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        & p:nth-child(n){
+            width: 190px;
+            text-align: center;
+            font-family: 'Catamaran', sans-serif;
+        }
+    }
+}
+
+footer{
+    & header{
+        display: flex;
+        place-content: center;
+        flex-wrap: wrap;
+        margin: 70px;
+        flex-direction: column;
+        & h2{
+            color:var(--texto);
+            text-align: center;
+            font-size: 28px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-family: 'Open sans Extra Bold';
+        }
+        & article{
+            & p{
+                text-align: center;
+                font-weight: 600;
+            }
+        }
+    }
+}
