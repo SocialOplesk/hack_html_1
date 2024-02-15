@@ -1,11 +1,11 @@
 # Tecnología
- [] HTML
- [] CSS3
- [] docs
+- [ ] HTML / Estructura
+- [ ] CSS3 / Diseño
+- [ ] Docs / Documentación
 # Seleccione el tipo de actividad
- [] Feature
- [] Changes
- [] Hotfix
- [] Refactor
- [] Performance
- [] Testing
+- [ ] Feature
+- [ ] Changes
+- [ ] Hotfix
+- [ ] Refactor
+- [ ] Performance
+- [ ] Testing
