@@ -57,7 +57,6 @@ header{
         }
     }
 }
-
 section{
     max-width: 100em;
     min-height: 20em;
@@ -161,11 +160,9 @@ section{
     & div:nth-child(n){
         margin:10px;
     }
-
     /* ! FINAL DEL HEADER */
 
     /* TODO COMIENZO DEL ARTICLE */
-
     .contenedor2{
         margin: 50px;
         & h2{
@@ -218,7 +215,7 @@ section{
         }
     }
 }
-
+/* TODO COMIENZO DEL FOOTER */
 footer{
     margin: 10px;
     & ul{
@@ -234,6 +231,60 @@ footer{
             color: #fff;
             list-style: none;
             letter-spacing: 3px;
+        }
+    }
+}
+/* ! COMIENZO DEL RESPONSIVE */
+@media screen and (max-width: 425px){
+    & section{
+        & article{
+            & div:nth-child(n){
+                width: 60vw;
+                margin: auto;
+                text-align: center;
+               & p{
+                font-size: 13px;
+                display: flex;
+                place-content: center;
+                place-items: center;
+                top: 2px;
+                letter-spacing: 2px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 425px){
+    .contenedor{
+        & div:nth-child(1),
+        & div:nth-child(2),
+        & div:nth-child(3),
+        & div:nth-child(4),
+        & div:nth-child(5){
+            left: 90px;
+        }
+    }
+}
+@media screen and (max-width: 375px){
+    .contenedor2{
+        .h2, .titulos{
+            text-align: center;
+        }
+    }
+}
+@media screen and (max-width: 320px) {
+    .contenedor{
+        & div:nth-child(1),
+        & div:nth-child(2),
+        & div:nth-child(3),
+        & div:nth-child(4),
+        & div:nth-child(5){
+            left: 65px;
+        }
+    }
+    .contenedor2{
+        .h2, .titulos{
+            text-align: center;
         }
     }
 }
