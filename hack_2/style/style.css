@@ -31,39 +31,5 @@ footer{
     max-width: 100vw;
     min-height: 86px;
     background: #AB2849;
-    margin: 50px 10px 0 ;
+    margin: 50px 10px 10px 10px;
 }
-
-
-
-
-
-/*
-div{
-    & header{
-        background: #93B5C9;
-        max-width: 100em;
-        min-height: 7em;
-    }
-    & nav{
-        background: #AB2849;
-        max-width: 100em;
-        min-height: 17em;
-    }
-}
-section {
-    & article:nth-child(n){
-        background: #AB2849;
-        max-width: 50em;
-        min-height: 6em;
-        margin: 10px 0;
-        border: 1px solid black;
-    }
-}
-footer{
-    background: #AB2849;
-    max-width: 80em;
-    min-height: 6em;
-    margin: 10px 0 10px 77px;
-}
-*/
