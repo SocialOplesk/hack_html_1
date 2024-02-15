@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+div{
+    & header{
+        background: #93B5C9;
+        max-width: 100em;
+        min-height: 7em;
+    }
+    & nav{
+        background: #AB2849;
+        max-width: 100em;
+        min-height: 17em;
+    }
+}
+section{
+    max-width: 30%;
+    min-height: 380px;
+    & article{
+        width: 70vw;
+        height: 86px;
+        margin: 10px 0;
+        background: #AB2849;
+        float: right;
+    }
+}
+
+footer{
+    max-width: 100vw;
+    min-height: 86px;
+    background: #AB2849;
+    margin: 50px 10px 10px 10px;
+}
