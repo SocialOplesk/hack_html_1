@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+:root{
+    --color-circulo:#00BF63;
+    --color-bt:#00BF63;
+
+}
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: url("../img/2.png") center center no-repeat;
+    background-size: inherit;
+    max-width: 100em;
+    min-height:27em;
+    place-content: center space-evenly;
+}
+.uno{
+    margin: 1em;
+    .borcelle{
+        margin: 10px 0;
+        border: 1px solid black;
+        max-width: 6em;
+        min-height: 3vh;
+        border-radius: 15px;
+        background: #000;
+        color: #fff;
+        text-transform: uppercase;
+        & p{
+            font-size: 0.8em;
+            text-align: center;
+            margin: 0.3em;
+        }
+    }
+    .enjoy{
+        font-size: 3em;
+    }
+    .miss{
+        margin: 15px 0;
+
+    }
+}
+.dos{
+    width: 8em;
+    height: 8em;
+    background: var(--color-circulo);
+    border-radius: 100%;
+    font-size: 25px;
+    & b{
+        display: flex;
+        margin: 47px;
+        text-align: center;
+        color: #fff;
+        font-size: 1.6em;
+    }
+}
+
+/* ! FINAL DE HEADER */
+
+/* TODOS COMIENZO DE SECTION */
+
+section {
+    margin: 2em 0;
+    & article {
+        & ul {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 70px 0;
+
+            & li {
+                flex: 1 0 30em;
+                height: 100px;
+                background-size: contain;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                & div{
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    flex: 1 0 1em;
+                    place-items: center;
+                    place-content: center end;
+                    margin: -3em 0;
+                    & p {
+                        color: red;
+                        #rallados{
+                            text-decoration: line-through;
+                        }
+                        .coloreado{
+                            color: black;
+                        }
+                    }
+                }
+            }
+
+            & li:nth-child(1) {
+                background: url("../img/1.png") center center no-repeat;
+                background-size: contain;
+                height: 18em;
+            }
+            & li:nth-child(2) {
+                background: url("../img/3.png") center center no-repeat;
+                background-size: contain;
+                height: 18em;
+                
+
+            }
+            & li:nth-child(3) {
+                background: url("../img/4.png") center center no-repeat;
+                background-size: contain;
+                height: 18em;
+                
+
+            }
+            & li:nth-child(4) {
+                background: url("../img/5.png") center center no-repeat;
+                background-size: contain;
+                height: 18em;
+                
+
+            }
+            & li:nth-child(5) {
+                background: url("../img/6.png") center center no-repeat;
+                background-size: contain;
+                height: 18em;
+                
+
+            }
+            & li:nth-child(6) {
+                background: url("../img/16.png") center center no-repeat;
+                background-size: contain;
+                height: 18em;
+                
+
+            }
+        }
+    }
+}
+
+
+footer{
+    display: flex;
+    max-width: 100vw;
+    min-height: 15vh;
+    background: black;
+    margin: 6em 2em auto 2em;
+    flex-wrap: wrap;
+    .boton{
+        background: var(--color-circulo);
+        min-width: 8em;
+        height: 4vh;
+        margin: 3em 0 0 7em;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 2em;
+    }
+}
+
+
+
+@media only screen and (max-width: 425px) {
+    header{
+        width: 110%;
+    }
+}
+@media only screen and (max-width: 375px) {
+    header{
+        width: 123%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    header{
+        width: 143%;
+    }
+}
