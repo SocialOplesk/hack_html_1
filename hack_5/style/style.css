@@ -169,6 +169,12 @@ section{
             display: flex;
             flex-wrap: wrap;
             text-transform: uppercase;
+            margin: 0 35px;
+        }
+        & p{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 35px;
         }
         & div[name*="principal"]{
             display: flex;
@@ -221,7 +227,7 @@ footer{
     & ul{
         display: flex;
         flex-wrap: wrap;
-        place-content: center;
+        place-content: center space-evenly;
         gap: 30px;
         place-items:center;
         max-width: 100vw;
