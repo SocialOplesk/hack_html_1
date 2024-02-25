@@ -192,9 +192,9 @@ section{
                 place-content: center;
                 place-items: center;
                 flex:1;
-                & img{
+                /* & img{
                     margin: 10px;
-                }
+                }*/
             }
             & div:nth-child(1){
                 display: flex;
@@ -202,9 +202,9 @@ section{
                 place-content: center;
                 place-items: center;
                 flex:1;
-                & img{
+                /* & img{
                     margin: 10px;
-                }
+                }*/
         }
             & div:nth-child(2){
                 display: flex;
@@ -213,9 +213,9 @@ section{
                 place-items: center;
                 flex:1;
                 margin-top: 30px;
-                & img{
+                /* & img{
                     width: 13em;
-                }
+                }*/
             }
         
         }
