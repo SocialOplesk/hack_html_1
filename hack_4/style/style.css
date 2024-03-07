@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Ruda&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none !important;
+    text-decoration: none !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --texto:#B88940;
+    --lineas:#FFBD59;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 1em;
+    margin: 3rem 0;
+    flex-wrap: wrap;
+    .A{
+        letter-spacing: 0.3rem;
+        font-weight: 900;
+        font-size: 1.3rem;
+        font-family: 'Ruda', sans-serif;
+    }
+    .B{
+        display: flex;
+        color: var(--texto);
+        font-size: 7rem;
+        letter-spacing: 0.5rem;
+    }
+    .C{
+        font-weight: 900;
+        font-size: 3.5rem;
+        font-family: 'Ruda', sans-serif;
+    }
+    .D{
+        font-size: 1.3rem;
+        letter-spacing: 0.2rem;
+        font-family: 'Catamaran', sans-serif;
+        font-weight: bold;
+    }
+    .linea{
+        width: 4rem;
+        height: 0.3em;
+        background: black;
+        border-radius: 10px;
+        margin: 1rem 0;
+    }
+}
+
+.flex{
+    display: flex;
+    place-content: center;
+    margin: 10rem 0;
+    position: relative;
+    & ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        place-content: center;
+        place-items: center;
+        text-align: center;
+        .uno{
+            background: url("/hack-html-1/hack_4/img/1.png") bottom center no-repeat;
+            background-size: cover;
+            width: 18vw;
+            height:20rem;
+        }
+        .dos{
+            background: url("/hack-html-1/hack_4/img/2.png") bottom center no-repeat;
+            background-size: cover;
+            width: 18vw;
+            height:20rem;
+        }
+        .tres{
+            background: url("/hack-html-1/hack_4/img/3.png") bottom center no-repeat;
+            background-size: cover;
+            width: 18vw;
+            height:20rem;
+        }
+        .textuno{
+            margin: 0.5rem 0;
+            font-size: 1.5rem;
+            font-weight: 900;
+            font-family: 'Catamaran', sans-serif;
+        }
+        .textdos{
+            margin: 0.5rem 0;
+            font-size: 1.5rem;
+            font-weight: 900;
+            font-family: 'Catamaran', sans-serif;
+        }
+        .texttres{
+            margin: 0.5rem 0;
+            font-size: 1.5rem;
+            font-weight: 900;
+            font-family: 'Catamaran', sans-serif;
+        }
+    }
+    .todo{ /* ! Se crea la linea */
+        width: 90vw; 
+        height: 1.8rem; 
+        background: var(--lineas); 
+        position: absolute;
+        top: 5rem;
+        z-index: -9999; /** Se posiciona por debajo de todo */
+    }
+    & li[name*="lineales1"]{ /* TODO Se mueve las lineas al medio*/
+        top: 2rem; /* ! Se usa rem para que no pase el 100% de la pantalla*/
+    }
+    & li[name*="lineales2"]{ /* TODO Se mueve las lineas al medio*/
+        top: 6rem; /* ! Se usa rem para que no pase el 100% de la pantalla*/
+    }
+    & li[name*="lineales3"]{ /* TODO Se mueve las lineas al medio*/
+        top: 10rem; /* ! Se usa rem para que no pase el 100% de la pantalla*/
+    }
+    & li[name*="lineales4"]{ /* TODO Se mueve las lineas al medio*/
+        top: 14rem; /* ! Se usa rem para que no pase el 100% de la pantalla*/
+    }
+}
+
+
+
+.footer{
+    display: flex;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+    margin: 7rem 0;
+    & li:nth-child(1){
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--texto);
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+    }
+    & li:nth-child(2){
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+}
+
+/* TODO Se hace el responsive de .flex*/
+@media screen and (width <= 425px){
+    .flex{
+        display: flex;
+        place-content: center;
+        margin: 10rem 0;
+        flex: 10rem;
+        & ul{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10rem 17rem;
+            place-content: center;
+            place-items: center;
+            text-align: center;
+        }
+        & li {
+            width: 10rem;
+        }
+    }
+}
+
+
+
+/*
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --texto:#B88940;
+    --lineas:#FFBD59;
+}
+
+body{
+    margin: 10px;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    & div{
+        background: black;
+        text-decoration: underline;
+        width: 5%;
+        height: 5px;
+        border-radius: 10px;
+        margin:30px;
+    }
+    & header {
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 3px;
+        font-family: 'Ruda', sans-serif;
+    }
+    & b:nth-child(n){
+        color: var(--texto);
+        font-size: 70px;
+        text-transform:uppercase;
+        letter-spacing: 7px;
+        font-family: 'Ruda', sans-serif;
+    }
+    & b:nth-child(n+4){
+        color: black;
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+    & p{
+        font-weight: 600;
+        margin: 10px;
+        letter-spacing: 3px;
+        font-family: 'Catamaran', sans-serif;
+    }
+}
+
+section{
+    display: relative;
+      #lineales:nth-child(1){
+        color: blue;
+        display: flex;
+        position: absolute;
+        top: 16.5em;
+        left: 4em;
+        right: 0;
+        bottom: 0;
+        width: 85%;
+        height: 30px;
+        background: var(--lineas);
+        z-index: -1;
+    }
+    #lineales:nth-child(2){
+        color: blue;
+        display: flex;
+        position: absolute;
+        top: 19.7em;
+        left: 4em;
+        right: 0;
+        bottom: 0;
+        width: 85%;
+        height: 30px;
+        background: var(--lineas);
+        z-index: -1;
+    }
+    #lineales:nth-child(3){
+        color: blue;
+        display: flex;
+        position: absolute;
+        top: 23em;
+        left: 4em;
+        right: 0;
+        bottom: 0;
+        width: 85%;
+        height: 30px;
+        background: var(--lineas);
+        z-index: -1;
+    }
+    #lineales:nth-child(4){
+        color: blue;
+        display: flex;
+        position: absolute;
+        top: 26em;
+        left: 4em;
+        right: 0;
+        bottom: 0;
+        width: 85%;
+        height: 30px;
+        background: var(--lineas);
+        z-index: -1;
+    }
+    & article{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 50vw;
+        margin: auto;
+        & div:nth-child(1){
+            width: 100%;
+            height: 200px;
+            background: url("../img/1.png") no-repeat center center;
+            background-size: contain;
+            flex: 10em;
+            margin-right:-40px;
+        }
+        & div:nth-child(2){
+            width: 100%;
+            height: 200px;
+            background: url("../img/2.png") no-repeat center center;
+            background-size: contain;
+            z-index: -1;
+            flex: 0 10em;
+        }
+        & div:nth-child(3){
+            width: 100%;
+            height: 200px;
+            background: url("../img/3.png") no-repeat center center;
+            background-size: contain;
+            flex: 10em;
+            margin-left:-40px;
+        }
+    }
+
+    #descripcion_footer{
+        display: flex;
+        flex-direction: row;
+        place-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 10px;
+        font-weight: 600;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        & p:nth-child(n){
+            width: 190px;
+            text-align: center;
+            font-family: 'Catamaran', sans-serif;
+        }
+    }
+}
+
+footer{
+    & header{
+        display: flex;
+        place-content: center;
+        flex-wrap: wrap;
+        margin: 70px;
+        flex-direction: column;
+        & h2{
+            color:var(--texto);
+            text-align: center;
+            font-size: 28px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-family: 'Open sans Extra Bold';
+        }
+        & article{
+            & p{
+                text-align: center;
+                font-weight: 600;
+            }
+        }
+    }
+}*/
