@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --bg-blue: #93B5C9;
+    --bg-wine: #AB2849;
+
+}
+
+.caja1 {
+    
+    width: 100%;
+    height: 70px;
+    background-color: var(--bg-blue);
+}
+
+.caja2{
+
+    width: 100%;
+    height: 200px;
+    background-color: var(--bg-wine);
+
+
+}
+
+.cont > *{
+
+    
+    width: 70%;
+    height: 100px;
+    background-color: var(--bg-wine);
+    margin-top: 25px;
+    float: left;
+      
+
+}
+
+
+.caja3{
+
+    width: 90%;
+    height: 100px;
+    background-color: var(--bg-wine);
+    margin-top: 20px;
+    margin-left:5%;
+    margin-right: 5%;
+    float: left;
+    
+
+
+}
+
+
+
