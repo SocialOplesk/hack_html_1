@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-blue: #93B5C9;
+    --bg-wine: #AB2849;
+}
+
+.caja1 {
+    display: block;
+    width: 100%;
+    height: 80px;
+    background-color: var(--bg-blue);
+}
+
+.caja2 {
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-color: var(--bg-wine);
+}
+
+.caja3,.caja4,.caja5,.caja6 {
+    display: block;
+    margin: 10px 0 10px 26px; 
+    margin-left: auto; /* Hace que la caja se pegue al lado derecho */
+
+    width: 90%;
+    height: 100px;
+    background-color: var(--bg-wine);
+}
+
+.caja7{
+
+    display: block;
+    margin: auto; 
+    width: 95%;
+    height: 100px;
+    background-color: var(--bg-wine);
+
+}
