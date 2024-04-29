@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&display=swap');
+/* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 400 to 900*/
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Ruda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ruda&display=swap');
+html{
+    width: 900px;
+}
+
+#contenedor{
+    background:#ffffff; 
+    height: 200px;
+    width: 100%;
+    position: relative;
+}
+
+#titulos{
+    height: 200px;
+    width: 100%;
+    margin-top: 10px;
+    position: absolute;
+    
+}
+.sale{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    font-family: "Ruda", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 900;
+}
+/*overflow:hidden; para que no se nos salga de la pantalla */
+#endofseason {
+    font-family: "Ruda", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    margin-bottom: 10px;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+#venta{
+    font-size: 70PX;
+    color: #B88940;
+    margin-top: -18px;
+    letter-spacing: 8px;
+}
+
+#saleoff {
+    font-size: 30px;
+}
+#Lorem {
+    font-family: "Catamaran", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    margin-top: 14px;
+    letter-spacing: 2px;    
+}
+#contenedor2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 60px;
+    float:initial;
+}
+.franjas{
+    background-color: #FFBD59;
+    width: 90%;
+    height: 20px;
+    margin-top: 20px;
+}
+.imagen1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin: -170px 5px 5px 5px;
+}
+.imagen2{
+    
+    margin-right: 7px;
+}
+.pieimg{
+    font-family: "Catamaran", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 16px;
+    margin-top: 14px;
+    text-align: center;
+}
+.contenedor3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:center;
+    text-align: center;
+}
+.piepagina{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 30PX;
+    color: #B88940;
+    letter-spacing: 2px;
+}
+#Lorem2 {
+    font-family: "Catamaran", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 16px;
+    margin-top: -8px;
+    
+}
