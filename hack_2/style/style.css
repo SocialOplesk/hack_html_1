@@ -1,0 +1,35 @@
+/*BLUE: #93B5C9
+WINE: #AB2849*/
+#caja1{
+    background:#6cacd1;
+    height: 120px;
+    width: 1200px;
+    float:left;
+}
+
+#caja2{
+    background: #AB2849;
+    height: 200px;
+    width: 1200px;
+    float:left; 
+    clear:both;
+ }
+
+.art-1{
+    background: #AB2849;
+    height: 120px;
+    width: 600px;
+    clear:both;
+    float: inline-start;
+    margin: 20px 0px 0px 0px;
+}
+
+.art-2{
+    background: #AB2849;
+    height: 120px;
+    width: 900px;
+    clear:both;
+    float: inline-start;
+    margin: 20px 0 0 5.5%;
+
+ }

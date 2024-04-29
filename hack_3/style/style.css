@@ -1,0 +1,65 @@
+/*BLUE: #93B5C9
+WINE: #AB2849*/
+html{
+    max-width: 1200px;    
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+.flex-container div{
+    /* width: 1200px; */
+}
+.caja1{   
+    background:#6cacd1;
+    height: 120px;
+    width: 100%;    
+}
+
+.caja2{
+    background: #AB2849;
+    height: 200px;
+    width: 100%;
+ }
+ .flex-direction{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    /* 
+    align-items: center; */
+}
+ .flex-direction1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;    
+ }
+ .caja3{    
+    background: #AB2849;
+    height: 100px;
+    width: 800px;
+    margin-top: 20px;    
+ }
+
+ .caja4{
+    background: #AB2849;
+    height: 100px;
+    width: 400px;
+    margin-top: 20px;        
+    margin-right: 5px;
+ }
+ .caja5{
+    background: #AB2849;
+    height: 100px;
+    width: 400px;
+    margin-top: 20px;        
+ }
+ .caja6{    
+    background: #AB2849;
+    height: 100px;
+    width: 100%;
+    margin-top: 20px;    
+ }
