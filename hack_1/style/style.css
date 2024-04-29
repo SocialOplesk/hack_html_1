@@ -1,0 +1,50 @@
+:root{
+    --bg-blue:#93B5C9;
+    --bg-wine:#AB2849;
+}
+/*
+margin es el mismo espacio por los 4 lados
+Posiciones relativas y absolutas
+Relativas: son mas fijas y se usan para 
+establecer como contenedores. (Caja)
+
+Absolutas: (pieza dentro de una caja)
+son mas flexibles y convienen para 
+manejarlo como item o como un elemento 
+de un contenedor ajuro debemos colocarle
+altura y ancho, el item se ubica arriba 
+y a la izquierda por defecto
+*/
+
+#contenedor{
+    background:#93B5C9;
+    height: 120px;
+    width: 1300px;
+    position: relative;
+}
+
+#item{
+    background: #AB2849;
+    margin: 120px 0px 0px 0px;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+}
+
+.art-1{
+    background: #AB2849;
+    margin: 225px 0px 0px 500px;
+    height: 120px;
+}
+.art-2{
+    background: #AB2849;
+    margin: 25px 0px 0px 500px;
+    height: 120px;
+ }
+.art-3{
+    background: #AB2849;
+    height: 120px;
+    margin: 25px 0 0 126px;
+    width: 80%;
+   
+}
