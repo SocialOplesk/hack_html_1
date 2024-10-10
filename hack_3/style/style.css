@@ -1,0 +1,87 @@
+
+:root{
+    --bg-blue: #93B5C9;
+    --bg-wine:#AB2849;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    position:relative;
+}
+.child{
+    width: 100vw;
+    height: 100vh;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-image: url(/hack_3/hack_3.png);
+    background-position: center center;
+    z-index: 3;
+    position: absolute;
+    border: 1px solid;
+    opacity: 0.2;
+    
+}
+/*tips*/
+.cont{
+    width: 49%;
+    height: 100%;
+    margin: 0 auto;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.el{
+    background-color: var(--bg-wine);
+}
+.el-sm{
+    width: 75.5%;
+    /* float: left; */
+    margin-bottom: 15px;
+    height: 86px;
+
+}
+.el1{
+    height: 106px;
+    background-color: var(--bg-blue);
+    width: 100%;
+}
+.el2{
+    height: 180px;
+    margin-bottom: 13px;
+    flex-grow: 1;
+    width: 100%;
+
+}
+.el3{
+    height: 87px;
+    margin-bottom: 16px;
+}
+.el5{
+    margin-bottom: 12px;;
+}
+.el4, .el6{
+    background-color: transparent;
+    display: flex;
+    gap: 4px;
+
+    & .child-el{
+        width: 50%;
+
+    }
+}
+.el6{
+    margin-bottom: 15px;
+}
+.el7{
+    height: 62px;
+    width: 100%;
+}
