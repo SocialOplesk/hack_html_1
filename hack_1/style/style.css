@@ -1,0 +1,62 @@
+:root{
+    --bg-blue: #93B5C9;
+    --bg-wine:#AB2849;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    position:relative;
+}
+.child{
+    width: 100vw;
+    height: 100vh;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-image: url(/hack_1/hack_1.png);
+    background-position: center center;
+    z-index: 3;
+    position: absolute;
+    opacity: 0.5;
+    
+}
+.cont{
+    width: 49%;
+    height: 100%;
+    margin: 0 auto;
+    z-index: 2;
+
+}
+.elemento{
+    background-color: var(--bg-wine);
+}
+.elemento-sm{
+    width: 76%;
+    margin-left: auto;
+    margin-bottom: 15px;
+    height: 86px;
+
+}
+.elemento1{
+    height: 106px;
+    background-color: var(--bg-blue);
+}
+.elemento2{
+    height: 180px;
+    margin-bottom: 14px;
+}
+.elemento3{
+    height: 87px;
+    margin-bottom: 16px;
+}
+.elemento7{
+    height: 65px;
+    width: 94%;
+    margin: 0 auto;
+}
